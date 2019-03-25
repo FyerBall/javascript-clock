@@ -1,0 +1,145 @@
+/* Color palette */
+/* https://colorhunt.co/palette/14114 */
+body {
+  background: #f6f7d7;
+  height: 100vh;
+}
+
+.clock {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50px;
+  background: #3ec1d3;
+  border: 20px solid white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.center {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  top: 50%;
+  left: 50%;
+  margin: -5px 0 0 -5px;
+  border-radius: 50%;
+  /* z-index: 10; */
+}
+
+.center-center {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: #ff165d;
+  top: 50%;
+  left: 50%;
+  margin: -3px 0 0 -3px;
+  border-radius: 100%;
+}
+
+.hour-hand {
+  position: absolute;
+  width: 4px;
+  height: 80px;
+  background: #fff;
+  top: 59%;
+  left: 50%;
+  margin: -110px 0 0 -2px;
+  transform: rotate(60deg);
+  transform-origin: bottom;
+  transition-timing-function: ease;
+}
+
+.min-hand {
+  position: absolute;
+  width: 4px;
+  height: 130px;
+  background: #fff;
+  top: 50%;
+  left: 50%;
+  margin: -130px 0 0 -2px;
+  transform: rotate(-60deg);
+  transform-origin: bottom;
+  transition-timing-function: ease;
+}
+
+.second-hand {
+  position: absolute;
+  width: 1px;
+  height: 130px;
+  background: red;
+  top: 50%;
+  left: 50%;
+  margin: -130px 0 0 -1px;
+  transform: rotate(0deg);
+  transform-origin: bottom;
+  box-shadow: 4px -5px 5px #000;
+}
+
+/* .point {
+  background: #ff9a00;
+  width: 10px;
+  height: 4px;
+  position: absolute;
+  top: 50%;
+} */
+.left-point {
+  position: absolute;
+  top: 50%;
+  width: 10px;
+  height: 4px;
+  background: #ff9a00;
+}
+
+.top-point {
+  position: absolute;
+  top: 3px;
+  width: 10px;
+  height: 4px;
+  background: #ff9a00;
+  transform: rotate(90deg);
+  left: 48%;
+}
+
+.right-point {
+  position: absolute;
+  top: 50%;
+  width: 10px;
+  height: 4px;
+  background: #ff9a00;
+  right: 0%;
+}
+
+.bottom-point {
+  position: absolute;
+  bottom: 3px;
+  width: 10px;
+  height: 4px;
+  background: #ff9a00;
+  transform: rotate(90deg);
+  left: 48%;
+}
+
+.shadow-box {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  left: 60px;
+  top: 60px;
+  transform: rotate(135deg);
+  background: #ff165d17;
+  border-radius: 34%;
+}
+
+.digiClock {
+  color: #fff;
+  position: absolute;
+  top: 60%;
+  left: 45%;
+  padding: 2px;
+  opacity: 0.9;
+  visibility: hidden;
+}
